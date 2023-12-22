@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView android:background="@color/white" android:layout_width="210dp" android:layout_height="210dp" sweet:cardCornerRadius="10dp" sweet:cardElevation="8dp" sweet:layout_constraintBottom_toBottomOf="0" sweet:layout_constraintEnd_toEndOf="0" sweet:layout_constraintStart_toStartOf="0" sweet:layout_constraintTop_toTopOf="0">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:contentDescription="@string/app_name">
+            <ImageView android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/ic_trophy" android:contentDescription="@string/app_name"/>
+            <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@+id/reward" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="You&apos;ve won"/>
+        </LinearLayout>
+        <com.anupkumarpanwar.scratchview.ScratchView android:id="@+id/scratchView" android:layout_width="match_parent" android:layout_height="match_parent" sweet:overlay_height="210dp" sweet:overlay_image="@drawable/scratch" sweet:overlay_width="210dp" sweet:tile_mode="CLAMP"/>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

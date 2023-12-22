@@ -1,0 +1,30 @@
+package i6;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+import s3.b;
+
+public final class c implements Parcelable.Creator {
+    public final Object createFromParcel(Parcel parcel) {
+        int o10 = b.o(parcel);
+        long j10 = 0;
+        long j11 = 0;
+        while (parcel.dataPosition() < o10) {
+            int readInt = parcel.readInt();
+            char c10 = (char) readInt;
+            if (c10 == 1) {
+                j10 = b.k(readInt, parcel);
+            } else if (c10 != 2) {
+                b.n(readInt, parcel);
+            } else {
+                j11 = b.k(readInt, parcel);
+            }
+        }
+        b.g(o10, parcel);
+        return new j0(j10, j11);
+    }
+
+    public final /* synthetic */ Object[] newArray(int i10) {
+        return new j0[i10];
+    }
+}

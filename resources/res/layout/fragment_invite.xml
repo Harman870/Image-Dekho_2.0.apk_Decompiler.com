@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xw.repo.widget.BounceScrollView android:layout_width="match_parent" android:layout_height="match_parent" sweet:bounceDelay="500" sweet:damping="1.5">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView android:id="@+id/refer_cardview" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="5dp" android:divider="@android:color/transparent" android:dividerHeight="0px" android:elevation="0dp" sweet:cardBackgroundColor="@color/colorPrimaryButton" sweet:cardCornerRadius="12dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/white" android:padding="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Invite &amp; Get Instant"/>
+                            <LinearLayout android:padding="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <TextView android:textSize="24sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/refer_reward_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="More Coins" android:fontFamily="@font/farro"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/redeem_btn" android:background="@drawable/dash_border" android:paddingLeft="10dp" android:paddingTop="3dp" android:paddingRight="10dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp">
+                        <TextView android:textSize="20sp" android:textColor="@color/white" android:id="@+id/refer_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4dp" android:text="Copy Refer Link" android:fontFamily="@font/basic"/>
+                        <ImageView android:id="@+id/copy_btn" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginTop="4dp" android:layout_marginBottom="4dp" android:src="@drawable/ic_content_copy_black_24dp" android:layout_marginStart="6dp" android:layout_marginEnd="4dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+                <ImageView android:id="@+id/share_wp" android:layout_width="50dp" android:layout_height="50dp" android:layout_margin="10dp" android:src="@drawable/ic_whatsapp"/>
+                <ImageView android:id="@+id/share_fb" android:layout_width="50dp" android:layout_height="50dp" android:layout_margin="10dp" android:src="@drawable/ic_facebook"/>
+                <ImageView android:id="@+id/share" android:layout_width="50dp" android:layout_height="50dp" android:layout_margin="10dp" android:src="@drawable/ic_more"/>
+            </LinearLayout>
+            <TextView android:textSize="13sp" android:textColor="@color/black" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="@string/refer_tnc"/>
+        </LinearLayout>
+    </com.xw.repo.widget.BounceScrollView>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/full_image" android:layout_width="match_parent" android:layout_height="400dp" android:layout_margin="10dp" android:src="@drawable/a1" android:scaleType="fitCenter"/>
+            <Button android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/share_image" android:background="@drawable/button_bg" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginBottom="20dp" android:text="Share With Friends" android:textAllCaps="false" android:paddingStart="8dp"/>
+            <FrameLayout android:id="@+id/bannerContainer" android:background="@color/transprant" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

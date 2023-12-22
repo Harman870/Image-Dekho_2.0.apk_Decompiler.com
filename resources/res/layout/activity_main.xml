@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:id="@+id/sample_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hello World!" sweet:layout_constraintBottom_toBottomOf="0" sweet:layout_constraintEnd_toEndOf="0" sweet:layout_constraintStart_toStartOf="0" sweet:layout_constraintTop_toTopOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

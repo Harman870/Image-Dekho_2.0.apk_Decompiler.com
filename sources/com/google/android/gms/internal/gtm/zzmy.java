@@ -1,0 +1,16 @@
+package com.google.android.gms.internal.gtm;
+
+import java.util.Locale;
+import r3.o;
+
+public final class zzmy extends zzjy {
+    public final zzqz zza(zzie zzie, zzqz... zzqzArr) {
+        boolean z9 = true;
+        if (zzqzArr.length != 1) {
+            z9 = false;
+        }
+        o.b(z9);
+        o.b(zzqzArr[0] instanceof zzrk);
+        return new zzrk(zzqzArr[0].zzk().toLowerCase(Locale.ENGLISH));
+    }
+}

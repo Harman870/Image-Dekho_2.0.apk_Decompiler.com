@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xw.repo.widget.BounceScrollView android:layout_width="match_parent" android:layout_height="match_parent" sweet:bounceDelay="500" sweet:damping="1.5">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView android:id="@+id/refer_cardview" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="5dp" android:divider="@android:color/transparent" android:dividerHeight="0px" android:elevation="0dp" sweet:cardBackgroundColor="@color/colorPrimaryButton" sweet:cardCornerRadius="12dp">
+                <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="end" android:id="@+id/captcha_available" android:background="@drawable/button_bg" android:paddingTop="4dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="0 Captcha" android:paddingStart="12dp" android:paddingEnd="12dp"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="50dp">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <LinearLayout android:padding="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <TextView android:textSize="24sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Captcha" android:fontFamily="@font/farro"/>
+                            </LinearLayout>
+                            <LinearLayout android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:background="@drawable/dash_border" android:paddingLeft="10dp" android:paddingTop="3dp" android:paddingRight="10dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp">
+                                <TextView android:textSize="20sp" android:textColor="@color/white" android:id="@+id/captcha_text" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4dp" android:text="znc78bc" android:fontFamily="@font/basic"/>
+                            </LinearLayout>
+                            <LinearLayout android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:paddingLeft="10dp" android:paddingTop="3dp" android:paddingRight="10dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp">
+                                <EditText android:textSize="20sp" android:textColor="@color/white" android:textColorHint="@color/gray_btn_bg_color" android:id="@+id/captcha_edittext" android:background="@drawable/dash_border" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4dp" android:hint="Please Enter Captcha Value" android:inputType="text" android:imeOptions="actionDone" android:fontFamily="@font/basic"/>
+                            </LinearLayout>
+                            <Button android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/submit_captcha" android:background="@drawable/button_bg" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="18dp" android:layout_marginBottom="10dp" android:text="Submit" android:textAllCaps="false" android:paddingStart="8dp" style="?android:attr/borderlessButtonStyle"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </com.xw.repo.widget.BounceScrollView>
+</RelativeLayout>
